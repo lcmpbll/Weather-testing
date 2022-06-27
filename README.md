@@ -1,25 +1,27 @@
-# (Application Name)
+# Wether App
 
-#### (Brief Description of Application)
+#### Shows the weather in a location
 
-#### By (Your Name Here)
+#### By Liam Campbell
+#### By Joe Jack
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _html_
+* _javascript_
+* _jquery_
+* _Api_
 
 ## Description
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repository from github, https://github.com/lcmpbll/Weather-Api-test _
+* _Open in vs code._
+* _Use node, commands npm install and npm build to set up environment_
+* _Make a file called .env_
+* _Make an account on Open Weather, and select the API keys tab._
+* _Make a file called .env_
 
 ## Known Bugs
 
