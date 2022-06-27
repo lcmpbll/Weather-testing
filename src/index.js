@@ -1,8 +1,8 @@
 
- import $ from 'jquery';
+import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/styles.css';
+//import './css/styles.css';
 
 $(document).ready(function () {
   $('#weatherLocation').click(function() {
@@ -10,7 +10,7 @@ $(document).ready(function () {
     $('#location').val("");
 
     let request = new XMLHttpRequest();
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1c1b98fa298118950e0f4b736fb9f1a6
+    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_Key}
     `;
 
     request.onreadystatechange = function () {
@@ -24,7 +24,7 @@ $(document).ready(function () {
     request.send();
     
     function getElements(response) {
-      $('.showHumidity').test('The humitidity in ${city is ${response.main.humidity}%');
+      $('.showHumidity').text('The humidity in ${city is ${response.main.humidity}%');
       $('.showTemp').text('The temperature in Kelvins is ${response.main.temp} degrees.');
     }
     
